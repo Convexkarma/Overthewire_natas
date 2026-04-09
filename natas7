@@ -1,0 +1,5 @@
+Access granted. The password for natas7 is bmg8SvU1LizuWjx3y7xkNERkHxGre0GS
+Input secret:
+
+so I checked the source code and found out that the code imported the secret from
+a hidden directory /include/secret

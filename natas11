@@ -1,0 +1,23 @@
+hey I solved this one with no help at all
+
+so I used thee command
+
+
+. /etc/natas_webpass/natas11 #
+
+the hash commented out dictionary.txt
+
+grep uses regex soo that explains the dots
+
+Regex (Regular Expressions) is a pattern-matching language used to search, match, and validate strings. Think of it as a powerful "find" tool that can describe patterns rather than exact text.
+Basic Syntax
+
+
+Basic Syntax
+PatternMeaningExample MatchabcLiteral string"abc".Any single character"a", "1", "!".*Any character, zero or more times"", "anything at all"[abc]Any ONE of these characters"a", "b", or "c"[a-z]Any lowercase letter"a" through "z"[^abc]Any character EXCEPT theseanything that isn't a, b, or c^Start of string^hello matches "hello world" but not "say hello"$End of stringworld$ matches "hello world" but not "world class"+One or more of the previousa+ matches "a", "aa", "aaa"?Zero or one of the previouscolou?r matches "color" and "colour"\dAny digit [0-9]"5", "9"\wAny word character [a-zA-Z0-9_]"a", "Z", "5", "_"\sAny whitespace (space, tab, newline)" ", "\t"
+
+
+
+I've saved the notes in obsidian
+
+UJdqkK1pTu6VLt9UHWAgRZz6sVUZ3lEk

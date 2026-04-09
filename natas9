@@ -1,0 +1,10 @@
+Access granted. The password for natas9 is ZE1ck82lmdGIoErlhQgWND6j2Wzz6b6t
+Input secret
+
+so I had to create a php file that reverses the encoding on the text
+
+<?php
+$encodedSecret = "3d3d516343746d4d6d6c315669563362";
+echo base64_decode(strrev(hex2bin($encodedSecret)));
+?>
+

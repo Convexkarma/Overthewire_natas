@@ -1,0 +1,23 @@
+The password for natas12 is yZdkjAYZRd3R7tq7T5kXMjMJlOIkzDeB
+
+the notes are on obsidian so the cookies were being protected by xor encryption because xor encryption is reversible ....further notes on the same are in obsisian
+.....I reversed the xor then decrypted the base 64 with the two php scripts
+
+
+the natas11.php and natas11.another.php
+
+
+it was base 64 before xor
+
+repeating xor cypher
+
+anything xor'd with itself is zero
+
+anything xor'd with zero is itself
+
+plaintext XOR key = ciphertext
+ciphertext XOR key = plaintext    ← decryption
+plaintext XOR ciphertext = key    ← key recovery ← THIS IS HOW WE ATTACK IT
+
+you now have to learn php
+

