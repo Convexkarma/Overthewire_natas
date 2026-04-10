@@ -5,3 +5,36 @@ I examined source code and found out that sql injection vuln ..user input was be
 " OR 1=1 #
 
 and got the flag
+
+
++### The Vulnerability
++Behind the scenes, the PHP script is taking the username and password you type into the form and dropping them directly into a database query without sanitizing them. The backend code looks exactly like this:
++
++```sql
++SELECT * FROM users WHERE username="[YOUR_USERNAME]" AND password="[YOUR_PASSWORD]"
++```
++
++Since the application isn't filtering quotes or special characters, you can manipulate the structure of the SQL command itself. 
++
++### The Exploit (The Payload)
++Your goal is to log in as `natas15` to get the password for the next level. You need to trick the database into ignoring the password check entirely.
++
++In the Natas 14 login form, type the following into the **Username** field:
++
++**`natas15" #`**
++
++*(Leave the password field completely blank and hit submit).*
++
++### Why this works:
++When you inject `natas15" #` into the username field, look at what happens to the backend SQL query:
++
++```sql
++SELECT * FROM users WHERE username="natas15" #" AND password=""
++```
++
++Here is the breakdown of the magic:
++* **`natas15`**: Tells the database exactly which account you want.
++* **`"` (Double Quote)**: Prematurely closes the developer's username string. The database thinks the username input is finished.
++* **`#` (Hash)**: In MySQL, the hash symbol is the comment character. It tells the database to completely ignore everything that comes after it. 
++
++Because of that `#`, the entire password check (`AND password=""`) is erased from the database's execution sequence. The query effectively becomes `SELECT * FROM users WHERE username="natas15"`, which is instantly evaluated as **TRUE**, granting you full access and printing the flag for level 15 on your screen.

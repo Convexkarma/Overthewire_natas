@@ -1,0 +1,11 @@
+└──╼ $python natas17.py
+[*] Testing connection to Natas 16...
+[*] Connection successful! Starting Blind Command Injection...
+[*] Password found so far: EqjHJbo7LFNb8vwhHb9s75hokh5TF0OC
+[+] BOOM! The password for natas17 is: EqjHJbo7LFNb8vwhHb9s75hokh5TF0OC
+[+] 
+
+I used a python script that checks for the existence of a password in the data base 
+Blind sql injection 
+
+I'll upload the script in the repo to  analyze what i wrote
